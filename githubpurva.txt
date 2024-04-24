@@ -1,0 +1,110 @@
+githubpurva
+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
+https://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/github.com/DELLPURVA/TEST.git
+https://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/
+
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 /c/DELLPURVA
+$ git clone https://github.com/DELLPURVA/TEST.git
+Cloning into 'TEST'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 /c/DELLPURVA
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 /c/DELLPURVA
+$ cd TEST
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 /c/DELLPURVA/TEST (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   tan
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 /c/DELLPURVA/TEST (main)
+$ git add *
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 /c/DELLPURVA/TEST (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   tan
+
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 /c/DELLPURVA/TEST (main)
+$ git commit -m "This file has been modified"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'CNL LAB@DESKTOP-ON0E0IF.(none)')
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 /c/DELLPURVA/TEST (main)
+$  git config --global user.email "purvajadhavv@gmail.com"
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 /c/DELLPURVA/TEST (main)
+$ git commit -m "This file has been modified"
+[main fbc43d6] This file has been modified
+ 1 file changed, 1 insertion(+)
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 /c/DELLPURVA/TEST (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 /c/DELLPURVA/TEST (main)
+$ git remote set-url origin https://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/github.com/tanmaypatil1324/TEST.git
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 /c/DELLPURVA/TEST (main)
+$ git push origin main
+fatal: unable to access 'https://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/github.com/tanmaypatil1324/TEST.git/': Could not resolve host: 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
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 /c/DELLPURVA/TEST (main)
+$ git remote set-url origin https://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/github.com/tanmaypatil1324/TEST
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 /c/DELLPURVA/TEST (main)
+$ git push origin main
+fatal: unable to access 'https://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/github.com/tanmaypatil1324/TEST/': Could not resolve host: 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
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 /c/DELLPURVA/TEST (main)
+$ git remote set-url origin https://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@github.com/tanmaypatil1324/TEST
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 /c/DELLPURVA/TEST (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 292 bytes | 292.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/tanmaypatil1324/TEST
+   867129f..fbc43d6  main -> main
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 /c/DELLPURVA/TEST (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
