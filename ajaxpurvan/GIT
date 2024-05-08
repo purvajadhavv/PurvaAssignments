@@ -1,0 +1,8 @@
+1.	git –version
+2.	git init
+3.	git add .
+4.	git status
+5.	git remote add origin “link”
+6.	git commit –m ”added”
+7.	git status
+8.	git push –u origin master
